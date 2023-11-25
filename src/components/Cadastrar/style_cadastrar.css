@@ -1,0 +1,424 @@
+@media screen and (min-width: 768px){
+    .cadastrar_main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+    }
+    
+    .cadastro{
+        background-color: rgb(51, 160, 233);
+        width: 70%;
+        height: 500px;
+        padding: 20px 40px;
+        border-radius: 15px;
+        box-shadow: 3px 3px 15px black;
+        color: white
+    }
+    .cadastro input{
+        height: 28px;
+        border: none;
+        outline: none;
+        border-radius: 4px;
+        padding-left: 10px;
+        background-color: rgb(241, 243, 245);
+    }
+
+    .cadastro input:focus{
+        background-color: #fff;
+        outline-color: rgb(255, 255, 255);
+        outline-style: double;
+    }
+    .cadastro .input_invalid{
+        height: 28px;
+        border-bottom: 2px solid rgb(224, 45, 21);
+        box-shadow: 0px 1px 3px red;
+        outline: none;
+        border-radius: 4px;
+        padding-left: 10px;
+    }
+    .cadastro .input_invalid:focus{
+        outline: none;
+    }
+
+    .cadastro label{
+        margin-bottom: 5px;
+    }
+    
+    
+    #fieldset_nome_nascimento{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 15px;
+    }
+    .nome{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    
+    }
+    .nascimento{
+        display: flex;
+        flex-direction: column;
+        width: calc(15% + 35px);
+        padding-left: 35px;
+    }
+   
+    
+    
+    #fieldset_email{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 15px;
+    }
+    .email{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        
+    }
+    
+    .area_senhas{
+        display: flex;
+        flex-direction: row;
+    }
+    #fieldset_senhas{
+        width: 45%;
+    }
+    .senhas{
+        display: flex;
+        flex-direction: column;
+    }
+    .pass_1{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5px;
+    }
+
+
+    .input_and_img{
+        position: relative; 
+        display: flex;
+        flex-direction: row;
+    }
+    .input_and_img input{
+        width: 100%;
+    }
+    .input_and_img #show_pass{
+        position: absolute;
+        right: 8px;
+        top: 4px;
+        width: 22px;
+    }
+    .input_and_img #show_pass:hover{
+        cursor: pointer;
+    }
+
+
+
+    .pass_2{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    #msg_pass1_1_cadastrar{
+        color: rgb(167, 17, 17);
+        font-size: 13px;
+        margin-top: 1px;
+        margin-bottom: 0;
+    }
+    #msg_pass1_2_cadastrar{
+        visibility: hidden;
+        font-size: 13px;
+        margin-top: 1px;
+        margin-bottom: 0;
+    }
+
+    #msg_pass2_1_cadastrar{
+        color: rgb(167, 17, 17);
+        font-size: 13px;
+        margin-top: 1px;
+        margin-bottom: 0;
+    }
+    #msg_pass2_2_cadastrar{
+        visibility: hidden;
+        font-size: 13px;
+        margin-top: 1px;
+        margin-bottom: 0;
+    }
+
+    
+    
+    .button{
+        width: 55%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+    .button button{
+        width: 150px;
+        height: 35px;
+        margin-right: 3px;
+        border-radius: 10px;
+        border: none;
+    }
+    .button #btn_cadastrar_1{
+        width: 150px;
+        height: 32px;
+        border-radius: 10px;
+        text-align: center;
+    }
+    .button #btn_cadastrar_2{
+        width: 164px;
+        height: 35px;
+        border-radius: 10px;
+        text-align: center;
+    }
+   
+
+
+    #btn_voltar{
+        background-color: rgb(219, 191, 65);
+        border: 1px solid rgb(100, 110, 6);
+        color: #fff;
+        font-size: 15px;
+        width: 80px;
+        height: 33px;
+        border-radius: 10px;
+        text-align: center;
+        line-height: 2.3;
+        text-decoration: none;
+        margin-right: 5px;
+    }
+    #btn_limpar{
+        background-color: rgb(236, 130, 130);
+        border: 1px solid rgb(206, 35, 35);
+        color: #fff;
+        font-size: 15px;
+    }
+    #btn_limpar:hover{
+        background-color: rgb(201, 85, 85);
+        cursor: pointer;
+    }
+    #btn_cadastrar_1, #btn_cadastrar_2{
+        background-color: rgb(18, 182, 18);
+        border: 1px solid green;
+        color: #fff;
+        font-size: 15px;
+    }
+    #btn_cadastrar_1:hover, #btn_cadastrar_2{
+        background-color: rgb(11, 139, 11);
+        cursor: pointer;
+    }
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 767px){
+    .cadastrar_main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+    }
+    
+    .cadastro{
+        background-color: rgb(51, 160, 233);
+        width: 80%;
+        height: 600px;
+        padding: 20px 20px;
+        border-radius: 15px;
+        box-shadow: 3px 3px 15px black;
+        color: white
+    }
+    .cadastro input{
+        width: calc(100% - 20px);
+        height: 28px;
+        border: none;
+        outline: none;
+        border-radius: 4px;
+        padding-left: 10px;
+        padding-right: 10px;
+        background-color: rgb(241, 243, 245);
+    }
+    .cadastro input:focus{
+        background-color: #fff;
+        outline-color: rgb(255, 255, 255);
+        outline-style: double;
+    }
+    .cadastro label{
+        margin-bottom: 5px;
+    }
+    
+    
+    #fieldset_nome_nascimento{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+    .nome{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    
+    }
+    .nascimento{
+        display: flex;
+        flex-direction: column;
+    }
+    .nascimento label{
+        margin-top: 10px;
+    }
+    
+    
+    #fieldset_email{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 15px;
+    }
+    .email{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        
+    }
+    
+    .area_senhas{
+        display: flex;
+        flex-direction: column;
+    }
+   
+    .senhas{
+        display: flex;
+        flex-direction: column;
+    }
+    .pass_1{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+
+    .input_and_img{
+        position: relative; 
+        display: flex;
+        flex-direction: row;
+    }
+    .input_and_img input{
+        width: 100%;
+    }
+    .input_and_img #show_pass{
+        position: absolute;
+        right: 8px;
+        top: 4px;
+        width: 22px;
+    }
+    .input_and_img #show_pass:hover{
+        cursor: pointer;
+    }
+
+
+
+    .pass_2{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+    #msg_pass1_1_cadastrar{
+        color: rgb(194, 22, 22);
+        font-size: 13px;
+        margin-top: 3px;
+        margin-bottom: 0;
+    }
+    #msg_pass1_2_cadastrar{
+        visibility: hidden;
+        font-size: 13px;
+        margin-top: 1px;
+        margin-bottom: 0;
+    }
+
+    #msg_pass2_1_cadastrar{
+        color: rgb(194, 22, 22);
+        font-size: 13px;
+        margin-top: 3px;
+        margin-bottom: 0;
+    }
+    #msg_pass2_2_cadastrar{
+        visibility: hidden;
+        font-size: 13px;
+        margin-top: 1px;
+        margin-bottom: 0;
+    }
+
+    
+    
+    .button{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: flex-end;
+        margin-top: 20px;
+    }
+    .button button{
+        width: 140px;
+        height: 35px;
+        margin-right: 3px;
+        border-radius: 5px;
+        border: none;
+    }
+    .button #btn_cadastrar_1{
+        width: 130px;
+        height: 31.5px;
+        border-radius: 5px;
+        text-align: center;
+    }
+    .button #btn_cadastrar_2{
+        width: 195px;
+        height: 35px;
+        border-radius: 5px;
+        text-align: center;
+    } 
+
+  
+
+    #btn_voltar{
+        background-color: rgb(219, 191, 65);
+        border: 1px solid rgb(100, 110, 6);
+        color: #fff;
+        font-size: 15px;
+        width: 80px;
+        height: 33px;
+        border-radius: 5px;
+        text-align: center;
+        line-height: 2.3;
+        text-decoration: none;
+        margin-right: 5px;
+    }
+    #btn_limpar{
+        background-color: rgb(236, 130, 130);
+        border: 1px solid rgb(206, 35, 35);
+        color: #fff;
+        font-size: 15px;
+    }
+    #btn_limpar:hover{
+        background-color: rgb(201, 85, 85);
+        cursor: pointer;
+    }
+    #btn_cadastrar_1, #btn_cadastrar_2{
+        background-color: rgb(18, 182, 18);
+        border: 1px solid green;
+        color: #fff;
+        font-size: 15px;
+    }
+    #btn_cadastrar_1:hover, #btn_cadastrar_2:hover{
+        background-color: rgb(11, 139, 11);
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,45 @@
+.home_main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.home{
+    background-color: rgb(64, 163, 255);
+    width: 300px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px black;
+    color: #fff;
+}
+
+#cadastrar{
+    margin-top: 30px;
+    background-color: rgb(219, 152, 70);
+    width: 200px;
+    padding: 6px 0;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    border-radius: 15px;
+    text-align: center;
+}
+
+#buscar{
+    margin-top: 30px;
+    background-color: rgb(219, 152, 70);
+    width: 200px;
+    padding: 6px 0;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    border-radius: 15px;
+    text-align: center;
+}

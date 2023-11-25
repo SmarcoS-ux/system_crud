@@ -1,0 +1,537 @@
+@media screen and (min-width: 768px){
+    .buscar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+    }
+    
+    .area_tabela{
+        background-color: rgb(96, 177, 231);
+        width: 80%;
+        height: 500px;
+        padding: 20px 40px 50px 40px;
+        border-radius: 15px;
+        box-shadow: 3px 3px 10px black;
+    }
+    .area_tabela h2{
+        color: #fff;
+    }
+    
+    
+    .header_buscar{
+        display: flex;
+        flex-direction: row;
+        height: 100px;
+    }
+    .title{
+        width: 50%;
+    }   
+    
+    
+    
+    .message_buscar_1{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 35px;
+        margin-top: -10px;
+    }
+    
+    .message_buscar_1 img{
+        width: 20px;
+        height: 20px;
+        margin-left: 10px;
+    }
+    .message_buscar_1 p{
+        color: rgb(189, 28, 28);
+        font-weight: 500;
+    }
+    
+    
+    
+    .message_buscar_2{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 35px;
+        margin-top: -10px;
+    }
+    .message_buscar_2 p{
+        color: rgb(13, 116, 13);
+        font-weight: 500;
+    }
+    .message_buscar_2 img{
+        width: 20px;
+        height: 20px;
+        margin-left: 10px;
+    }
+    
+    
+    
+    
+    .message_show{
+        display: flex;
+    }
+    .message_hiden{
+        display: none;
+    }
+    
+    
+    #loader{
+        width: 20px;
+        height: 20px;
+        border: 6px solid;
+        margin-right: 20px;
+        border-radius: 50%;
+        color: rgb(250, 206, 8);
+        border-top-color: transparent;
+        animation: loaders 0.6s linear infinite;
+    }
+    @keyframes loaders{
+        to{
+            transform: rotate(360deg);
+        }
+    }
+    #loader_hidden{
+        visibility: hidden;
+    }
+
+    .button_buscar{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        width: 50%;
+    }
+    .button_buscar button{
+        width: 180px;
+        height: 35px;
+        border: none;
+        border-radius: 10px;
+        font-weight: 600;
+        background-color: rgb(138, 224, 9);
+        border: 1px solid rgb(7, 158, 7);
+        color: #3b3b3b;
+    }
+    .button_buscar button:hover{
+        background-color: rgb(9, 180, 9);
+        cursor: pointer;
+        color: #fff;
+    }
+    
+    
+    .tab{
+        width: 100%;
+        background-color: rgb(252, 239, 225);
+        border-left: 2px solid rgb(75, 74, 74);
+        border-right: 2px solid rgb(75, 74, 74);
+        border-bottom: 2px solid rgb(75, 74, 74);
+        border-top: 1px solid rgb(75, 74, 74);
+        overflow-y: scroll;
+        height: 380px;
+    }
+    
+    
+    
+    .table_1 th{
+        border-collapse: collapse;
+        border: 1px solid rgb(83, 83, 83);
+    }
+    
+    .table_2{
+        background-color: rgb(252, 239, 225);
+        width: 100%;
+    }
+    
+    
+    .table_2, th, td{
+        text-align: left;
+        border-collapse: collapse;
+        padding-left: 4px;
+    }
+    .table_2 th, .table_2 td{
+        border-collapse: collapse;
+        border: 1px solid rgb(83, 83, 83);
+    }
+    .table_2 td{
+        border-left: none;
+    }
+    .table_2 td:nth-child(1), .table_2 td:nth-child(2), .table_2 td:nth-child(3), .table_2 td:nth-child(4), .table_2 td:nth-child(5){
+        border-top: none;
+    }
+    .table_2 tr{
+        height: 30px;
+    }
+    
+    
+    .column_cod{
+        width: 60px;
+        min-width: 60px;
+        max-width: 60px;
+        text-align: center;
+    }
+    .column_nome{
+        min-width: 200px;
+        width: 200px;
+    }
+    .column_dt_nasc{
+        min-width: 170px;
+        width: 170px;
+        text-align: center;
+    }
+    .column_dt_cadastro{
+        min-width: 180px;
+        width: 180px;
+        text-align: center;
+    }
+    .column_dt_atualizacao{
+        width: 150px;
+        min-width: 150px;
+        text-align: center;
+    }
+    
+    
+    #column_cod_thead{
+        border-left: none;
+    }
+    #column_email_thead{
+        border-top: 1px solid rgb(75, 74, 74);
+        width: 400px;
+    }
+    #column_button_thead{
+        border-left: none;
+    }
+    
+    
+    
+    #column_cod_thead:hover{
+        cursor: pointer;
+        background-color: rgb(212, 212, 212);
+    }#column_nome_thead:hover{
+        cursor: pointer;
+        background-color: rgb(212, 212, 212);
+    }#column_dt_nascimento_thead:hover{
+        cursor: pointer;
+        background-color: rgb(212, 212, 212);
+    }#column_dt_cadastro_thead:hover{
+        cursor: pointer;
+        background-color: rgb(212, 212, 212);
+    }#column_dt_atualizacao_thead:hover{
+        cursor: pointer;
+        background-color: rgb(212, 212, 212);
+    }
+    #column_email_thead:hover{
+        cursor: pointer;
+        background-color: rgb(212, 212, 212);
+    }
+    #column_email_thead:hover ~ #column_button_thead{
+        cursor: pointer;
+        background-color: rgb(212, 212, 212);
+    }
+    #column_button_thead:hover{
+        cursor: pointer;
+    }
+    
+    
+    
+    tr .column_email{
+        border-right: none;
+        border-top: none;
+    }
+    
+    tr .botao_editar{
+        border-top: none;
+        padding-right: 30px;
+    }
+    .botao_editar button{
+        width: 25px;
+        background-color: transparent;
+        border: none;
+    }
+    .botao_editar button:hover{
+        cursor: pointer;
+    }
+    .botao_editar button img{
+        width: 25px;
+    }
+    
+    #table_body{
+        position: relative;
+    }
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 767px){
+    .buscar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+    }
+    
+    .area_tabela{
+        background-color: rgb(96, 177, 231);
+        width: 85%;
+        height: 500px;
+        padding: 10px 20px 50px 20px;
+        border-radius: 15px;
+        box-shadow: 3px 3px 10px black;
+    }
+    .area_tabela h2{
+        color: #fff;
+    }
+    
+    
+    .header_buscar{
+        display: flex;
+        flex-direction: column;
+        height: 150px;
+    }
+    .title{
+        width: 100%;
+    }   
+    
+    
+    
+    .message_buscar_1{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 35px;
+        margin-top: -10px;
+    }
+    
+    .message_buscar_1 img{
+        width: 20px;
+        height: 20px;
+        margin-left: 10px;
+    }
+    .message_buscar_1 p{
+        color: rgb(189, 28, 28);
+        font-weight: 500;
+    }
+    
+    
+    
+    .message_buscar_2{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 35px;
+        margin-top: -10px;
+    }
+    .message_buscar_2 p{
+        color: rgb(13, 116, 13);
+        font-weight: 500;
+    }
+    .message_buscar_2 img{
+        width: 20px;
+        height: 20px;
+        margin-left: 10px;
+    }
+    
+    
+    
+    
+    .message_show{
+        display: flex;
+    }
+    .message_hiden{
+        /*display: none;*/
+        visibility: hidden;
+    }
+    
+    
+    #loader{
+        width: 20px;
+        height: 20px;
+        border: 6px solid;
+        margin-right: 20px;
+        border-radius: 50%;
+        color: rgb(250, 206, 8);
+        border-top-color: transparent;
+        animation: loaders 0.6s linear infinite;
+    }
+    @keyframes loaders{
+        to{
+            transform: rotate(360deg);
+        }
+    }
+    #loader_hidden{
+        visibility: hidden;
+    }
+
+
+    .button_buscar{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .button_buscar button{
+        width: 180px;
+        height: 35px;
+        border: none;
+        border-radius: 10px;
+        font-weight: 600;
+        background-color: rgb(138, 224, 9);
+        border: 1px solid rgb(7, 158, 7);
+        color: #3b3b3b;
+    }
+    .button_buscar button:hover{
+        background-color: rgb(9, 180, 9);
+        cursor: pointer;
+        color: #fff;
+    }
+    
+    
+    .tab{
+        width: 100%;
+        background-color: rgb(252, 239, 225);
+        border-left: 2px solid rgb(75, 74, 74);
+        border-right: 2px solid rgb(75, 74, 74);
+        border-bottom: 2px solid rgb(75, 74, 74);
+        border-top: 1px solid rgb(75, 74, 74);
+        overflow-y: scroll;
+        height: 380px;
+    }
+    
+    
+    
+    .table_1 th{
+        border-collapse: collapse;
+        border: 1px solid rgb(83, 83, 83);
+    }
+    
+    .table_2{
+        background-color: rgb(252, 239, 225);
+        width: 100%;
+    }
+    
+    
+    .table_2, th, td{
+        text-align: left;
+        border-collapse: collapse;
+        padding-left: 4px;
+    }
+    .table_2 th, .table_2 td{
+        border-collapse: collapse;
+        border: 1px solid rgb(83, 83, 83);
+    }
+    .table_2 td{
+        border-left: none;
+    }
+    .table_2 td:nth-child(1), .table_2 td:nth-child(2), .table_2 td:nth-child(3), .table_2 td:nth-child(4), .table_2 td:nth-child(5){
+        border-top: none;
+    }
+    .table_2 tr{
+        height: 30px;
+    }
+    
+    
+    .column_cod{
+        width: 60px;
+        min-width: 60px;
+        max-width: 60px;
+        text-align: center;
+    }
+    .column_nome{
+        min-width: 200px;
+        width: 200px;
+    }
+    .column_dt_nasc{
+        min-width: 170px;
+        width: 170px;
+        text-align: center;
+    }
+    .column_dt_cadastro{
+        min-width: 180px;
+        width: 180px;
+        text-align: center;
+    }
+    .column_dt_atualizacao{
+        width: 150px;
+        min-width: 150px;
+        text-align: center;
+    }
+    .column_email{
+        text-wrap: nowrap;
+    }
+    
+    
+    #column_cod_thead{
+        border-left: none;
+    }
+    #column_email_thead{
+        border-top: 1px solid rgb(75, 74, 74);
+        width: 400px;
+    }
+    #column_button_thead{
+        border-left: none;
+        padding-right: 50px;
+    }
+    
+    
+    
+    #column_cod_thead:hover{
+        cursor: pointer;
+        background-color: rgb(212, 212, 212);
+    }#column_nome_thead:hover{
+        cursor: pointer;
+        background-color: rgb(212, 212, 212);
+    }#column_dt_nascimento_thead:hover{
+        cursor: pointer;
+        background-color: rgb(212, 212, 212);
+    }#column_dt_cadastro_thead:hover{
+        cursor: pointer;
+        background-color: rgb(212, 212, 212);
+    }#column_dt_atualizacao_thead:hover{
+        cursor: pointer;
+        background-color: rgb(212, 212, 212);
+    }
+    #column_email_thead:hover{
+        cursor: pointer;
+        background-color: rgb(212, 212, 212);
+    }
+    #column_email_thead:hover ~ #column_button_thead{
+        cursor: pointer;
+        background-color: rgb(212, 212, 212);
+    }
+
+    #column_button_thead:hover{
+        cursor: pointer;
+    }
+    
+    
+    
+    tr .column_email{
+        border-right: none;
+        border-top: none;
+    }
+    
+    tr .botao_editar{
+        border-top: none;
+    }
+    .botao_editar button{
+        width: 25px;
+        background-color: transparent;
+        border: none;
+    }
+    .botao_editar button:hover{
+        cursor: pointer;
+    }
+    .botao_editar button img{
+        width: 25px;
+    }
+    
+    #table_body{
+        position: relative;
+    }
+}
