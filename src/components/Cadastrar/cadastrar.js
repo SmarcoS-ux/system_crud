@@ -79,7 +79,7 @@ export default function Cadastrar(){
 
                 if (form_cadastrar !== null){
                     form_cadastrar.setAttribute("method", "POST");
-                    form_cadastrar.setAttribute("action", "https://3561-138-59-221-115.ngrok-free.app/future_store/back_end/Servicos/cadastrar.php");
+                    form_cadastrar.setAttribute("action", "https://965c-3-14-245-191.ngrok-free.app/future_store/back_end/Servicos/cadastrar.php");
                 }
             } 
             

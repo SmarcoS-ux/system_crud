@@ -294,7 +294,7 @@ export default function Buscar(){
     //Função responsável pela busca de dados no back_end
     const buscar = () => {
         setLoader("loader");
-        Axios.post("https://3561-138-59-221-115.ngrok-free.app/future_store/back_end/Servicos/buscar.php")
+        Axios.post("https://965c-3-14-245-191.ngrok-free.app/future_store/back_end/Servicos/buscar.php")
             .then(function(result){
                 setDados(result.data);
                 messageSuccessfulDB();

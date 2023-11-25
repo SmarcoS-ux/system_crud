@@ -85,7 +85,7 @@ export default function Atualizar(props){
 
                 let form_atualizar = document.getElementById("form_atualizar");
                 form_atualizar.setAttribute("method", "POST");
-                form_atualizar.setAttribute("action", "https://3561-138-59-221-115.ngrok-free.app/future_store/back_end/Servicos/atualizar.php");
+                form_atualizar.setAttribute("action", "https://965c-3-14-245-191.ngrok-free.app/future_store/back_end/Servicos/atualizar.php");
                 
             } 
             
@@ -107,7 +107,7 @@ export default function Atualizar(props){
             setTypeButtonSubmit("");
 
             let form_atualizar = document.getElementById("form_atualizar");
-            form_atualizar.setAttribute("action", "https://3561-138-59-221-115.ngrok-free.app/future_store/back_end/Servicos/excluir.php");
+            form_atualizar.setAttribute("action", "https://965c-3-14-245-191.ngrok-free.app/future_store/back_end/Servicos/excluir.php");
             form_atualizar.setAttribute("method", "POST");
 
         }
